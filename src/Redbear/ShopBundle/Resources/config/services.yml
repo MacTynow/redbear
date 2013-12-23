@@ -1,0 +1,7 @@
+parameters:
+#    redbear_shop.example.class: Redbear\ShopBundle\Example
+
+services:
+#    redbear_shop.example:
+#        class: %redbear_shop.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]

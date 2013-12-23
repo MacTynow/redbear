@@ -1,0 +1,4 @@
+redbear_shop:
+    resource: "@RedbearShopBundle/Resources/config/routing.yml"
+    prefix:   /
+
