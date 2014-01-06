@@ -1,3 +1,11 @@
-redbear_shop_homepage:
+redbear_homepage:
     pattern:  /home
     defaults: { _controller: RedbearShopBundle:Home:index }
+
+redbear_shop:
+    pattern:  /shop
+    defaults: { _controller: RedbearShopBundle:Shop:show }
+
+redbear_blog:
+    pattern:  /blog
+    defaults: { _controller: RedbearShopBundle:Blog:show}

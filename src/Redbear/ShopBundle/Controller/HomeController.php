@@ -8,6 +8,6 @@ class HomeController extends Controller
 {
     public function indexAction()
     {
-        return $this->render('RedbearShopBundle:Shop:index.html.twig');
+        return $this->render('RedbearShopBundle:General:index.html.twig');
     }
 }
