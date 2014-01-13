@@ -1,3 +1,7 @@
+redbear_resume:
+    resource: "@RedbearResumeBundle/Resources/config/routing.yml"
+    prefix:   /
+
 redbear_shop:
     resource: "@RedbearShopBundle/Resources/config/routing.yml"
     prefix:   /

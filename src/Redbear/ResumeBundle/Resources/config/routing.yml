@@ -1,0 +1,3 @@
+redbear_resume:
+    pattern:  /resume
+    defaults: { _controller: RedbearResumeBundle:Default:index }
