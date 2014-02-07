@@ -6,14 +6,19 @@
         {% block stylesheets %}
             <link rel="stylesheet" href="{{ asset('bootstrap/css/bootstrap.min.css') }}" type="text/css" />
             <link rel="stylesheet" href="{{ asset('css/redbear.css') }}" type="text/css" />
+            <link rel="stylesheet" href="{{ asset('font-awesome/css/font-awesome.min.css') }}" />
         {% endblock %}
         <!--<link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />-->
     </head>
     <body>
         {% block body %}{% endblock %}
-    </body>    
+    </body>  
+
     {% block javascripts %}
             <script src="http://code.jquery.com/jquery-latest.js" ></script>
             <script src="{{ asset('bootstrap/js/bootstrap.min.js') }}"></script>
+            <script src="{{ asset('simplecartjs/simpleCart.min.js') }}"></script>
+            <script src="{{ asset('js/site.js') }}"></script>
+
     {% endblock %}
 </html>
