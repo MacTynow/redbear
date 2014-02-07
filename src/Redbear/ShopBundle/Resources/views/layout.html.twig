@@ -1,5 +1,6 @@
 {% extends "::base.html.twig" %}
 
+
 {% block body %}
     <header>        
         <nav class="navbar navbar-default navbar-fixed-top rb-navbar" role="navigation">
@@ -14,24 +15,30 @@
                     <a class="navbar-brand" href="{{ path('redbear_homepage') }}">RedBear</a>
                 </div>
 
-                <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav">
                         <li><a href="{{ path('redbear_shop') }}">Shop</a></li>
                         <li><a href="{{ path('redbear_blog') }}">Blog</a></li>
                     </ul>
-                    <form class="navbar-form navbar-right" role="search">
-                        <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Search">
-                        </div>
-                        <button type="submit" class="btn btn-default">Submit</button>
-                    </form>
+                    <ul class="navbar-form navbar-right" role="search">
+                        <button type="button" class="btn btn-default" id="cartbutton" class="btn btn-default" data-container="body" data-toggle="popover" data-placement="bottom" title="Cart">
+                            <i class="fa fa-shopping-cart"></i>
+                            <span class="simpleCart_quantity"></span> items -
+                            <span class="simpleCart_total"></span>
+                        </button>
+                    </ul>
                 </div>
             </div>
         </nav>  
     </header>
-
+        
     <body>       
+        <div id="cart_content_wrapper" style="display: none" class="col-md-5">
+            <div class="simpleCart_items"></div>
+            <a href="javascript:;" class="simpleCart_empty"></a>
+            <a href="javascript:;" class="simpleCart_checkout">Checkout</a>
+        </div>
         {% block content %}{% endblock %}
     </body>
 {% endblock %}
+
